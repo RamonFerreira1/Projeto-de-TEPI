@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pedra, Papel e Tesoura</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="mt-4">Pedra, Papel e Tesoura</h1>
+    <div class="options mt-4">
+      <div class="option" onclick="jogar('pedra')">
+        <img src="https://thumbs.dreamstime.com/b/gesto-de-punho-m%C3%A3o-fechada-s%C3%ADmbolo-ilustra%C3%A7%C3%A3o-do-vetor-%C3%ADcone-contorno-bra%C3%A7o-193651843.jpg" alt="Pedra" class="img-fluid">
+        <span>Pedra</span>
+      </div>
+      <div class="option" onclick="jogar('papel')">
+        <img src="https://images.emojiterra.com/google/noto-emoji/unicode-15/bw/512px/1f590.png" alt="Papel" class="img-fluid">
+        <span>Papel</span>
+      </div>
+      <div class="option" onclick="jogar('tesoura')">
+        <img src="https://i.pinimg.com/736x/fe/51/93/fe5193c19f74b67d08e5e3ea0fd6483d.jpg" alt="Tesoura" class="img-fluid">
+        <span>Tesoura</span>
+      </div>
+    </div>
+
+    <div class="result mt-4" id="resultado"></div>
+    <div class="score mt-2" id="pontuacao">Pontuação: 0</div>
+    <div class="round mt-2" id="rodada">Rodada 1</div>
+    <button class="reset-button mt-4 btn btn-primary" onclick="reiniciarPartida()">Reiniciar Partida</button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
